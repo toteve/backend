@@ -34,7 +34,7 @@ app.get('/SignIn', (req, res) => {
     ? res.send(`
     <p> Agente autenticado, bienvenido <b>${email}</b>
     Su token está en el sessionStorage </p>
-    <a href="/Dashboard?token=${token}"> Ir al Dashboard</a>
+    <a href="https://backend-2iy0.onrender.com/Dashboard?token=${token}"> Ir al Dashboard</a>
     <script>
       sessionStorage.setItem('token', JSON.stringify("${token}"))
     </script>
