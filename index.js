@@ -3,7 +3,9 @@ const agentes = require('./data/agentes.js').results
 const app = express()
 const jwt = require('jsonwebtoken')
 const cors = require('cors');
-app.listen(3000, () => console.log('Your app listening on port 3000'))
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log('Your app listening on port 3000'))
 
 const secretKey = 'Shhhhh'
 app.use(cors());
